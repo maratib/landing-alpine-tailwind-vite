@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link href="/index.css" rel="stylesheet">
+  <script>
+    let count = 10;
+  </script>
+</head>
+
+<body class="debug-screens">
+  <div class=" justify-center items-center" x-data="{ count: 0 }">
+    <button class="bg-gray-900 text-white" @click="count++">Click Me</button>
+    <p><span x-text="new Date().getFullYear()"></span></p>
+    <p><span x-text="count"></span></p>
+    <p>You've clicked the button <span class="text-white" x-text="count"></span> times.</p>
+    <p>Hello world 123</p>
+    <!-- <button x-data="{ red: false }" x-bind:class="red ? 'bg-red' : ''" @click="red = !red">
+      Toggle Red
+    </button> -->
+
+    <button x-data="{red : false}" @click="red = !red" x-text="red" :class="red ? 'bg-red-500' : ''">
+    </button>
+
+    <div x-data="{ statuses: ['open', 'closed', 'archived'] }">
+      <template x-for="status in statuses">
+        <div x-text="status"></div>
+      </template>
+    </div>
+
+    <div x-data="{ title: '<h1>Start Here</h1>' }">
+      <div x-html="title"></div>
+    </div>
+
+
+
+  </div>
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
