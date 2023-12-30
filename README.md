@@ -20,4 +20,4 @@ yarn preview
 }
 ```
 
-Happy Developing Lading Pages :blush: :clap:
+Happy Developing Landing Pages :blush: :clap:
