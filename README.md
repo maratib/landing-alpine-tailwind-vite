@@ -1,5 +1,5 @@
 # Landing Pages Starter
-Using Alpine.js TailwindCSS, Vite and Typescript
+Using Vite pre-configured with Alpine.js TailwindCSS and Typescript
 
 ```bash
 # For development 
